@@ -1,0 +1,7 @@
+.unopened-img {
+    height: 350px;
+
+    @include lg {
+        height: 450px;
+    };
+};

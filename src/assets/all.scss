@@ -1,0 +1,30 @@
+// 雖然主要是定義變數檔案，但因變數檔需要用到函式檔，所以函式檔也要寫進來
+@import "bootstrap/scss/functions";
+// 客製的變數檔
+@import "./utils/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/utilities";
+
+// 客製的utilities檔
+@import "./utils/utilities";
+@import "bootstrap/scss/bootstrap";
+
+// base
+@import "./base/base";
+
+// breakpoint
+@import "./utils/mixins";
+
+// layout
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/content";
+@import "./layout/map";
+
+// pages
+@import "./pages/home";
+@import "./pages/unopened";
+
+//vendors
+@import "./vendors/pagination";

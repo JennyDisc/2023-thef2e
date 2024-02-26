@@ -1,0 +1,8 @@
+#svg {
+    @include md {
+        height: 600px;
+    }
+    @include lg {
+        height: 750px;
+    }
+}

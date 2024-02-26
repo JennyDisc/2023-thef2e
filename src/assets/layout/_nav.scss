@@ -1,0 +1,19 @@
+nav {
+    li {
+        a {
+            display: block;
+            padding-bottom: 12px;
+            height: 40px;
+
+            &:hover {
+                border-bottom: 4px solid #262E49;
+            }
+        }
+
+        &:nth-child(2) {
+            a {
+                color: #BFBFBF;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+$utilities: map-merge(
+    $utilities, 
+    (
+      "font-size": (
+        rfs: false,
+        // 新增
+        responsive: true,
+        property: font-size,
+        class: fs,
+        values: $font-sizes,
+      ),
+      "line-height": (
+        // 新增
+        responsive: true,
+        property: line-height,
+        class: lh,
+        values: (
+          1: 1,
+          sm: $line-height-sm,
+          // 新增
+          sms: $line-height-sms,
+          base: $line-height-base,
+          // 新增
+          bases: $line-height-bases,
+          lg: $line-height-lg,
+        )
+      ),
+      "font-weight": (
+        // 新增
+        responsive: true,
+        property: font-weight,
+        class: fw,
+        values: (
+          lighter: $font-weight-lighter,
+          light: $font-weight-light,
+          normal: $font-weight-normal,
+          medium: $font-weight-medium,
+          semibold: $font-weight-semibold,
+          bold: $font-weight-bold,
+          bolder: $font-weight-bolder
+        )
+      ),
+    )
+);

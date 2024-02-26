@@ -1,0 +1,8 @@
+.headerBlock {
+    background: #262E49;
+    padding: 29px 0 16px 24px;
+
+    @include lg {
+        padding: 17px 0 17px 47px;
+    }
+}

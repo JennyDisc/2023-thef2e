@@ -1,0 +1,132 @@
+.selectArea {
+    &-Block {
+        width: 100%;
+
+        @include lg {
+            width: auto;
+        }
+    }
+
+    select {
+        @include lg {
+            width: 156px;
+        }
+    }
+
+    button {
+        color: #FFFFFF;
+        background: #262E49;
+
+        &:hover {
+            background: purple;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.accordion {
+    width: 100%;
+}
+
+.leftSide {
+    background: #FFFFFF;
+
+    &-Chart2 {
+        .chartContent2 {
+            .number {
+                border-radius: 100px;
+                padding: 4px 9px 3px 8px;
+                width: 24px;
+
+                &-3 {
+                    background: #84CB98;
+                }
+
+                &-2 {
+                    background: #8894D8;
+                }
+
+                &-1 {
+                    background: #DFA175;
+                }
+
+                p {
+                    color: #FFFFFF;
+                }
+            }
+
+            .partisan {
+                width: 96px;
+
+                &-right {
+                    width: 104px;
+                }
+
+                @include lg {
+                    width: 104px;
+                }
+
+                &-3 {
+                    border-right: 2px solid #84CB98;
+                }
+
+                &-2 {
+                    border-right: 2px solid #8894D8;
+                }
+
+                &-1 {
+                    border-right: 2px solid #DFA175;
+                }
+            }
+        }
+    }
+
+    &-right {
+        background: #EDF7F0;
+        border: 2px solid #84CB98;
+        padding: 12px 20px;
+        // 固定右側區塊寬度，避免因內容長度而跳動
+        width: 269.43px;
+
+        &-third {
+            background: #EDEFF9;
+            border: 2px solid #8894D8;
+        }
+    }
+}
+
+.rightSide {
+    .hint {
+        background: #DEE0E4;
+
+        &Content {
+            &-block1 {
+                margin-bottom: 62px;
+            }
+
+            &-block2 {
+                margin-bottom: 80px;
+            }
+        }
+
+        &LastLi {
+            &-block1 {
+                margin-bottom: 25px;
+            }
+
+            &-block2 {
+                margin-bottom: 27px;
+            }
+        }
+    }
+}
+
+.county {
+    fill: #ebf0e4;
+    stroke: gray;
+    stroke-width: 0.1px;
+
+    &:hover {
+        fill: lightgray;
+    }
+}
