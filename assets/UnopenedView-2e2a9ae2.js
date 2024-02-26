@@ -1,0 +1,1 @@
+import{_ as s,o,c as n,a as e}from"./index-b2268cae.js";const t="/2023-thef2e/assets/no_found-e4426d48.png",c={},_=e("p",{class:"fs-6 fs-lg-3 mb-6"},"尚未開放查詢",-1),a=e("img",{src:t,alt:"尚未開放的提醒圖片",class:"unopened-img"},null,-1),r=[_,a];function l(d,i){return o(),n("section",null,r)}const p=s(c,[["render",l]]);export{p as default};
