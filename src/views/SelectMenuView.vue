@@ -228,7 +228,7 @@ export default {
       this.townshipListDisabled = true;
       this.readExcelFile();
 
-      // 只選"縣市"值，傳遞變數給父層，讓右側第一個<aside>數據表切換成顯示
+      // 點選清除按鈕後要讓右側恢復預設
       this.$emit("updateIsVisible", {
         firstIsVisible: this.isRightAsideVisible,
         SecondIsVisible: this.isRightAsideVisible2,
