@@ -226,6 +226,14 @@ export default {
       this.selectTownship = "";
       this.countyListDisabled = true;
       this.townshipListDisabled = true;
+      this.readExcelFile();
+
+      // 只選"縣市"值，傳遞變數給父層，讓右側第一個<aside>數據表切換成顯示
+      this.$emit("updateIsVisible", {
+        firstIsVisible: this.isRightAsideVisible,
+        SecondIsVisible: this.isRightAsideVisible2,
+        ThirdIsVisible: this.isRightAsideVisible3,
+      });
     },
 
     sumData(data, targetType) {
